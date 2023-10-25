@@ -7,3 +7,6 @@ body{
 .top-menu{
     height: 100px;
 }
+.menu-top{
+    display: inline-block;
+}
