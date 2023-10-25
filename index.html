@@ -1,16 +1,32 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
     <link rel="styleheet" href="css/mystyles.css">
 </head>
+
 <body>
     <div class="top-top-menu">
         <p class="menu-top"><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
+        <p id="fecha-hora"></p> 
+
+        <script>
+            function actualizarFechaHora() {
+                const fechaHoraElement = document.getElementById("fecha-hora");
+                const ahora = new Date();
+                const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
+                fechaHoraElement.textContent = fechaHoraFormateada;
+            } 
+    
+            setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+            actualizarFechaHora(); // Mostrar la fecha y hora inicial
+        </script>
     </div>
+    
     <div class="top-menu">
         <ul>
             <li>Inicio</li>
@@ -41,4 +57,5 @@
         </ul>
     </div>
 </body>
+
 </html>

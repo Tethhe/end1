@@ -3,8 +3,14 @@ body{
 }
 .top-top-menu{
     height: 50px;
+    border-color: red;
+    border-top: 5px;
+    border-bottom: 5px;
 }
 .top-menu{
+    border-color: blue;
+    border-top: 5px;
+    border-bottom: 5px;
     height: 100px;
 }
 .menu-top{
