@@ -1,12 +1,14 @@
 body{ 
-    background-color: greenyellow;
+    background-color: rgb(69, 97, 28);
 }
 .top-top-menu{
-    display: block;
+    display: flex;
     height: 50px;
     border-color: green;
     border-style: solid;
-    
+    align-items: center;
+    padding: 5px 10%;
+    justify-content: space-between;
 }
 .top-top-menu-info1{
     display: inline-block;
@@ -17,4 +19,14 @@ body{
     display: inline-block;
     width: 300px;    
 
+}
+ul li{
+    list-style-type: none;
+}
+.bocchi{
+    height: 20px;
+}
+.pags{
+    display: inline-block;
+    padding: 0 5px;
 }
