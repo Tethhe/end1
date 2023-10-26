@@ -5,31 +5,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testing</title>
-    <link rel="styleheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/mystyles.css">
 </head>
 
 <body>
     <div class="top-top-menu">
-        <p class="menu-top"><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
-        <p id="fecha-hora"></p> 
+        <div class="top-top-menu-info1" id="top-top-menu-info">
+            <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
+        </div>
+        <div class="top-top-menu-info2" id="top-top-menu-info">
+            <p id="fecha-hora"></p>
+            <script>
+                function actualizarFechaHora() {
+                    const fechaHoraElement = document.getElementById("fecha-hora");
+                    const ahora = new Date();
+                    const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+                    const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
+                    fechaHoraElement.textContent = fechaHoraFormateada;
+                }
 
-        <script>
-            function actualizarFechaHora() {
-                const fechaHoraElement = document.getElementById("fecha-hora");
-                const ahora = new Date();
-                const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
-                fechaHoraElement.textContent = fechaHoraFormateada;
-            } 
-    
-            setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
-            actualizarFechaHora(); // Mostrar la fecha y hora inicial
-        </script>
+                setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+                actualizarFechaHora(); // Mostrar la fecha y hora inicial
+            </script>
+        </div>
     </div>
-    
+
     <div class="top-menu">
         <ul>
-            <li>Inicio</li>
+            <li><a href="">Inicio</a></li>
             <li>Tours
                 <ul>
                     <li><a href="">Paracas</a></li>
@@ -54,6 +57,10 @@
                     <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
                 </ul>
             </li>
+            <li><a href="">Contactenos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Libro de Reclamaciones</a></li>
         </ul>
     </div>
 </body>
