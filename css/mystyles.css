@@ -6,14 +6,15 @@ body{
     height: 50px;
     border-color: green;
     border-style: solid;
+    
 }
 .top-top-menu-info1{
     display: inline-block;
-    width: 500px;
+    width: 400px;
 }
 .top-top-menu-info2{
-
+    position: relative;
     display: inline-block;
-    width: 500px;
+    width: 300px;    
 
 }
