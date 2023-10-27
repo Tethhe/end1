@@ -91,11 +91,11 @@ ul, ol{
 }
 
 .slider{
-    width: auto;
+    
+    width: 100%;
     height: auto;
     margin: 10px auto 0;
     overflow: hidden;
-    animation:  slide 16s infinite alternate ease-in-out;
 
 }
 
@@ -103,10 +103,13 @@ ul, ol{
     display: flex;
     padding: 0;
     width: 400%;
+    animation:  slide 16s infinite alternate ease-in-out;
 }
 
 .slider li{
     width: 100%;
+    list-style: none;
+    position: relative;
 }
 .slider img{
     width: 100%;
