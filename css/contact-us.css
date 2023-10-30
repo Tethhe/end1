@@ -1,15 +1,15 @@
+.conta
 .contenedor{
     background-color: rgb(76, 128, 60);
-
+    display: flex;
     padding: 30px;
 }
 .info-of-us{
-    display: flex;
     background-color: rgb(26, 118, 180);
 }
 .send-us{
-    display: flex;
     background-color: rgb(42, 207, 152);
+
 }
 
 #of-us{
@@ -19,5 +19,5 @@
 }
 .info{
     font-family: Poppins;
-    
 }
+

@@ -46,7 +46,7 @@ ul, ol{
     display: flex;
     height: 82px;
     padding: 5px;
-    z-index: 1;
+    z-index: 999;
 }
 .nav li a{
     background-color: rgb(173, 147, 121);
@@ -68,6 +68,7 @@ ul, ol{
     display: none;
     position: absolute;
     min-width: auto;
+    z-index: 9;
 }
 .nav li:hover > ul{
     display: block;
@@ -82,5 +83,4 @@ ul, ol{
 
 .nav{
     margin: 5px;
-    
 }
