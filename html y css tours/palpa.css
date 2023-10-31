@@ -1,0 +1,40 @@
+.header {
+  width: 94.5vw;
+  background-image: url("../html/imagen1.jpg");
+  background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el encabezado */
+  background-repeat: no-repeat; /* Evita la repetición de la imagen */
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: row-reverse; /* Cambia la dirección del flex container a horizontal y el sentido del contenido */
+  align-items: center;
+  padding: 20px 40px; /* Añade espaciado alrededor del contenido */
+}
+
+.text-container {
+  flex: 10; /* Hace que el contenido ocupe el espacio disponible */
+  text-align: right; /* Alinea el texto a la derecha */
+}
+
+.subheader {
+  text-align: right; /* Alinea "Ica" e "Inicio/Ica" a la derecha */
+  margin-top: 150px; /* Agrega un poco de margen superior */
+}
+
+h1 {
+  font-size: 30px;
+  color: #f1f1f1;
+  margin: 40px 1px;
+  text-align: left;
+}
+
+.subtext {
+  font-size: 20px;
+  margin-top: 5px; /* Agrega margen superior para separar "Inicio/Ica" de "Ica" y del texto superior */
+  color: #f1f1f1;
+}
+
+.texto {
+  font-size: 15px;
+  text-align: left;
+  color: #f1f1f1;
+}
