@@ -1,174 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../../../css/nav.css">
-    <link rel="stylesheet" href="../../../../css/img-of-tours.css">
-    <link rel="stylesheet" href="../../../../css/mystyles.css">
-    <title>Palpa</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ica</title>
+  <link rel="stylesheet" href="../../../../css/nav.css">
+  <link rel="stylesheet" href="../../../../css/mystyles.css">
+  <link rel="stylesheet" href="../Palpa/palpa.css">
+  <link rel="stylesheet" href="../css/about-tours.css">
+
 </head>
+
 <body>
-    <nav>
-        <div class="top-top-menu">
-            <div class="top-top-menu-info1">
-                <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
-            </div>
-            <div class="top-top-menu-info2">
-                <p id="fecha-hora"></p>
-                <script>
-                    function actualizarFechaHora() {    
-                        const fechaHoraElement = document.getElementById("fecha-hora");
-                        const ahora = new Date();
-                        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                        const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
-                        fechaHoraElement.textContent = fechaHoraFormateada;
-                    }
+  <nav>
+    <div class="top-top-menu">
+      <div class="top-top-menu-info1">
+        <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
+      </div>
+      <div class="top-top-menu-info2">
+        <p id="fecha-hora"></p>
+        <script>
+          function actualizarFechaHora() {
+            const fechaHoraElement = document.getElementById("fecha-hora");
+            const ahora = new Date();
+            const opciones = {
+              weekday: "long",
+              year: "numeric",
+              month: "long",
+              day: "numeric",
+              hour: "2-digit",
+              minute: "2-digit",
+              second: "2-digit",
+            };
+            const fechaHoraFormateada = ahora.toLocaleDateString("es-ES", opciones);
+            fechaHoraElement.textContent = fechaHoraFormateada;
+          }
+          setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+          actualizarFechaHora();
 
-                    setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
-                    actualizarFechaHora(); // Mostrar la fecha y hora inicial
-                </script>
-            </div>
-            <div class="pags">
-                <div>
-                    <a href="../../../pag1.html"><img src="../../../../image/bochi.jpg" class="links-externos"></a>
-                    <a href="../../../pag2.html"><img src="../../../../image/how's-she.jpg" class="links-externos"></a>
-                    <a href="../../../pag3.html"><img src="../../../../image/meguin-idk.jpg" class="links-externos"></a>
-                </div>
-            </div>
+        </script>
+      </div>
+      <div class="pags">
+        <div>
+          <a href="../../../pag1.html"><img src="../../../../image/bochi.jpg" class="links-externos"></a>
+          <a href="../../../pag2.html"><img src="../../../../image/how's-she.jpg" class="links-externos"></a>
+          <a href="../../../pag3.html"><img src="../../../../image/meguin-idk.jpg" class="links-externos"></a>
         </div>
-        <div class="header">
-            <div class="logo">
-                <img src="../../../../image/WHYYY.png" alt="Logo-inicio">
-            </div>
-            <div class="top-menu">
-                <ul class="nav">
-                    <li><a href="../../../../index.html">Inicio</a></li>
-                    <li><a href="">Tours</a>
-                        <ul>
-                            <li><a href="">Paracas</a></li>
-                            <li><a href="/html/nav/tours/Ica/ica.html">Ica</a>
-                                <ul>
-                                    <li><a href="">Tour viñedos en Ica</a></li>
-                                    <li><a href="">Tour de Tubulares en Huacachina</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/html/nav/tours/Palpa/Palpa.html">Palpa</a></li>
-                            <li><a href="/html/nav/tours/Nasca/Nasca.html">Nasca</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="">Mas Solicitados</a>
-                        <ul>
-                            <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
-                            <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
-                            <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
-                            <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
-                            <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
-                            <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/html/nav/contactanos.html">Contactenos</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Libro de Reclamaciones</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <div class="titulo1">
-      <div class="titulo2">
-        <h2 class="ica-title">
-          Ica
-        </h2>
-        <h3>Inicio / ica</h3>
       </div>
     </div>
-    <div class="slider">
-        <div class="carousel">
-          <div class="row">
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                  >
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 1</h3>
-                  <p>Descripción de la tarjeta 1</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                />
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 2</h3>
-                  <p>Descripción de la tarjeta 2</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                />
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 3</h3>
-                  <p>Descripción de la tarjeta 3</p>
-                </div>
-              </div>
+    <div class="header">
+      <div class="logo"><a href="../../../../index.html">
+        <img src="../../../../image/WHYYY.png" alt="Logo-inicio" /></a>
+      </div>
+      <div class="top-menu">
+        <ul class="nav">
+          <li><a href="../../../../index.html">Inicio</a></li>
+          <li>
+            <a href="">Tours</a>
+            <ul>
+              <li>
+                <a href="/html/nav/tours/Paracas/Paracas.html">Paracas</a>
+              </li>
+              <li>
+                <a href="/html/nav/tours/Ica/Ica.html">Ica</a>
+                <ul>
+                  <li><a href="">Tour viñedos en Ica</a></li>
+                  <li><a href="">Tour de Tubulares en Huacachina</a></li>
+                </ul>
+              </li>
+              <li><a href="/html/nav/tours/Palpa/Palpa.html">Palpa</a></li>
+              <li><a href="/html/nav/tours/Nasca/Nazca.html">Nasca</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Mas Solicitados</a>
+            <ul>
+              <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
+              <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
+              <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
+              <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
+              <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
+              <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
+            </ul>
+          </li>
+          <li><a href="/html/nav/contactanos.html">Contactenos</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="header">
+    <div id="subheader">
+      <h1 id="title">Palpa</h1>
+      <span id="subtext"><a href="../../../../index.html">Inicio</a>/Palpa</span>
+    </div>
+    <div id="text-container">
+      <p id="texto">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus
+        aspernatur cumque mollitia maxime, perspiciatis laudantium consectetur
+        tempore asperiores eligendi atque possimus sequi, nemo harum. Repellat
+        numquam libero blanditiis eaque quos!Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Repellendus aspernatur cumque mollitia
+        maxime, perspiciatis laudantium consectetur tempore asperiores
+        eligendi atque possimus sequi, nemo harum. Repellat numquam libero
+        blanditiis eaque quos!Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Repellendus aspernatur cumque mollitia maxime,
+        perspiciatis laudantium consectetur tempore asperiores eligendi atque
+        possimus sequi, nemo harum. Repellat numquam libero blanditiis eaque
+        quos!Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Repellendus aspernatur cumque mollitia maxime, perspiciatis laudantium
+        consectetur tempore asperiores eligendi atque possimus sequi, nemo
+        harum. Repellat numquam libero blanditiis eaque quos!Lorem ipsum dolor
+        sit amet consectetur adipisicing elit. Repellendus aspernatur cumque
+        mollitia maxime, perspiciatis laudantium consectetur tempore
+        asperiores eligendi atque possimus sequi, nemo harum.
+      </p>
+    </div>
+  </div>
+  <div class="slider">
+    <div class="carousel">
+      <div class="row">
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/coach.png" alt="Imagen de la tarjeta" class="card-image">
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
             </div>
           </div>
-          <div class="row">
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                />
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 4</h3>
-                  <p>Descripción de la tarjeta 4</p>
-                </div>
-              </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/the-forest-bruh-2.png" alt="Imagen de la tarjeta" class="card-image" />
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
             </div>
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                />
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 5</h3>
-                  <p>Descripción de la tarjeta 5</p>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-inner">
-                <img
-                  src="../../../../image/WHYYY.png"
-                  alt="Imagen de la tarjeta"
-                  class="card-image"
-                />
-                <div class="card-overlay">
-                  <h3>Título de la tarjeta 6</h3>
-                  <p>Descripción de la tarjeta 6</p>
-                </div>
-              </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/the-forest-bruh-1.png" alt="Imagen de la tarjeta" class="card-image" />
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
             </div>
           </div>
         </div>
       </div>
+      <div class="row">
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/the-forest-the-chill.png" alt="Imagen de la tarjeta" class="card-image">
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/venti-shot.png" alt="Imagen de la tarjeta" class="card-image">
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-inner">
+            <img src="../1-img/wasa.png" alt="Imagen de la tarjeta" class="card-image">
+            <div class="card-overlay">
+              <h3>Título de la tarjeta 6</h3>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ea molestiae cumque deleniti eaque
+                voluptatum ab iusto possimus, vero accusantium nesciunt, sapiente error. Earum nobis nihil unde animi
+                libero quasi!</p>
+                <b>si quieres aber mas de esta area da click --> <a href="#" style="color: white; text-decoration: none;">aqui</a></b>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

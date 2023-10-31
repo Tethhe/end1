@@ -2,133 +2,142 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../../css/mystyles.css">
-    <link rel="stylesheet" href="../../css/nav.css">
-    <link rel="stylesheet" href="../../css/contact-us.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactenos</title>
+  <link rel="stylesheet" href="../../css/mystyles.css">
+  <link rel="stylesheet" href="../../css/nav.css">
+  <link rel="stylesheet" href="/html/nav/tours/css/header-of-contact.css">
+  <link rel="stylesheet" href="../nav/tours/css/contact-us-si.css">
+
 <body>
-    <nav>
-        <div class="top-top-menu">
-            <div class="top-top-menu-info1">
-                <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
-            </div>
-            <div class="top-top-menu-info2">
-                <p id="fecha-hora"></p>
-                <script>
-                    function actualizarFechaHora() {
-                        const fechaHoraElement = document.getElementById("fecha-hora");
-                        const ahora = new Date();
-                        const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
-                        const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
-                        fechaHoraElement.textContent = fechaHoraFormateada;
-                    }
+  <nav>
+    <div class="top-top-menu">
+      <div class="top-top-menu-info1">
+        <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
+      </div>
+      <div class="top-top-menu-info2">
+        <p id="fecha-hora"></p>
+        <script>
+          function actualizarFechaHora() {
+            const fechaHoraElement = document.getElementById("fecha-hora");
+            const ahora = new Date();
+            const opciones = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric', hour: '2-digit', minute: '2-digit', second: '2-digit' };
+            const fechaHoraFormateada = ahora.toLocaleDateString('es-ES', opciones);
+            fechaHoraElement.textContent = fechaHoraFormateada;
+          }
 
-                    setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
-                    actualizarFechaHora(); // Mostrar la fecha y hora inicial
-                </script>
-            </div>
-            <div class="pags">
-                <div>
-                    <a href="../html/pag1.html"><img src="../../image/bochi.jpg" class="links-externos"></a>
-                    <a href="../html/pag2.html"><img src="../../image/how's-she.jpg" class="links-externos"></a>
-                    <a href="../html/pag3.html"><img src="../../image/meguin-idk.jpg" class="links-externos"></a>
-                </div>
-            </div>
+          setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+          actualizarFechaHora(); // Mostrar la fecha y hora inicial
+        </script>
+      </div>
+      <div class="pags">
+        <div>
+          <a href="../pag1.html"><img src="../../image/bochi.jpg" class="links-externos"></a>
+          <a href="../pag2.html"><img src="../../image/how's-she.jpg" class="links-externos"></a>
+          <a href="../pag3.html"><img src="../../image/meguin-idk.jpg" class="links-externos"></a>
         </div>
-        <div class="header">
-            <div class="logo">
-                <img src="../../image/WHYYY.png" alt="Logo-inicio">
-            </div>
-            <div class="top-menu">
-                <ul class="nav">
-                    <li><a href="../../index.html">Inicio</a></li>
-                    <li><a href="">Tours</a>
-                        <ul>
-                            <li><a href="">Paracas</a></li>
-                            <li><a href="">Ica</a>
-                                <ul>
-                                    <li><a href="">Tour viñedos en Ica</a></li>
-                                    <li><a href="">Tour de Tubulares en Huacachina</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="">Palpa</a></li>
-                            <li><a href="">Nasca</a></li>
-
-                        </ul>
-                    </li>
-                    <li><a href="">Mas Solicitados</a>
-                        <ul>
-                            <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
-                            <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
-                            <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
-                            <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
-                            <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
-                            <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="">Contactenos</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Libro de Reclamaciones</a></li>
+      </div>
+    </div>
+    <div class="header">
+      <div class="logo">
+        <img src="../../image/WHYYY.png" alt="Logo-inicio">
+      </div>
+      <div class="top-menu">
+        <ul class="nav">
+          <li><a href="../../index.html">Inicio</a></li>
+          <li><a href="">Tours</a>
+            <ul>
+              <li><a href="/html/nav/tours/Paracas/Paracas.html">Paracas</a></li>
+              <li><a href="/html/nav/tours/Ica/Ica.html">Ica</a>
+                <ul>
+                  <li><a href="">Tour viñedos en Ica</a></li>
+                  <li><a href="">Tour de Tubulares en Huacachina</a></li>
                 </ul>
-            </div>
-        </div>
-    </nav>
-    <form>
-        <div class="contenedor">
-            <div class="info-of-us">
-                <div class="info-of-us-1">
-                    <h2>Ubíquenos y contáctenos</h2>
-                </div>
-                <div class="info-of-u2">
-                    <p class="info"><strong id="of-us">Address</strong><br>
-                        Urbanización Sebastián Barranca C-16<br>
-                        Ica, Perú</p>
-                    <p class="info"><strong id="of-us">Website</strong><br>
-                        toursenica.com</p>
-                    <p class="info"><strong id="of-us">Mobile</strong><br>
-                +        +51 983436326</p>
-                    <p class="info"><strong id="of-us">Email</strong><br>
-                        info@toursenica.com</p>
-                </div>
-            </div>
-            <div class="send-us">
+              </li>
+              <li><a href="/html/nav/tours/Palpa/Palpa.html">Palpa</a></li>
+              <li><a href="/html/nav/tours/Nasca/Nazca.html">Nasca</a></li>
 
-                <div>
-                    Nombre y apellidos*
-                </div>
-                <div><input name="nombre-y-apellidos" type="text" value="" placeholder="Put ur name here">
-                </div>
+            </ul>
+          </li>
+          <li><a href="">Mas Solicitados</a>
+            <ul>
+              <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
+              <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
+              <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
+              <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
+              <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
+              <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
+            </ul>
+          </li>
+          <li><a href="">Contactenos</a></li>
+          <li><a href="">Blog</a></li>
+          <li><a href="">Nosotros</a></li>
+          <li><a href="">Libro de Reclamaciones</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-                <div>
-                    Correo electrónico*
-                </div>
-                <div><input name="email-correo-electrónico" type="email" placeholder="example@domain.com" required="">
-                </div>
-                <div>
-                    <div>
-                        Teléfono
-                    </div>
-                    <div><input name="phone-teléfono" type="tel" value="" placeholder="+1-999-999-9999"></div>
-                </div>
-                <div>
-                    <div>
-                        Asunto
-                    </div>
-                    <div><input name="text-asunto" type="text" value="" placeholder="Indique el asunto"></div>
-                </div>
-                <div>
-                    <div>
-                        Mensaje*
-                    </div>
-                    <div><textarea placeholder="Cuéntenos brevemente su consulta" required=""></textarea>
-                    </div>
-                </div>
-            </div>
+  <div id="header">
+    <div id="cosas">
+      <div id="subheader">
+        <h1 id="title">Contactenos</h1>
+        <span id="subtext"><a href="../../../../index.html">Inicio</a>/Contactenos</span>
+      </div>
+      <div id="text-container">
+      </div>
+    </div>
+  </div>
+  </div>
+  <form id="mi-formulario" class="mi-formulario">
+    <div class="contenedor">
+      <div class="info-of-us">
+        <div class="info-of-us-1">
+          <h2>Ubíquenos y contáctenos</h2>
         </div>
-    </form>
+        <div class="info-of-u2">
+          <p class="info" id="Address"><strong>Address</strong><br>
+            Urbanización Sebastián Barranca C-16<br>
+            Ica, Perú</p>
+          <p class="info" id="Website"><strong>Website</strong><br>
+            toursenica.com</p>
+          <p class="info" id="Mobile"><strong>Mobile</strong><br>
+            +51 983-436-326</p>
+          <p class="info" id="Email"><strong>Email</strong><br>
+            info@toursenica.com</p>
+        </div>
+      </div>
+      <div class="send-us">
+        <div class="campo">
+          <label for="nombre-y-apellidos">Nombres y Apellidos*</label>
+          <div class="boxinput">
+            <input required="" name="nombre-y-apellidos" type="text" value="" placeholder="Put ur name here">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="email-correo-electronico">Correo Electrónico*</label>
+          <div class="boxinput">
+            <input required="" name="email-correo-electronico" type="email" placeholder="example@domain.com">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="phone-teléfono">Teléfono</label>
+          <input name="phone-teléfono" type="tel" value="" placeholder="+1-999-999-9999">
+        </div>
+        <div class="campo">
+          <label for="text-asunto">Asunto</label>
+          <input required="" name="text-asunto" type="text" value="" placeholder="Indique el asunto">
+        </div>
+        <div class="campo">
+          <label for="text-mensaje">Mensaje*</label>
+          <textarea required="" placeholder="Cuéntenos brevemente su consulta"></textarea>
+        </div>
+        <input type="submit" value="Enviar">
+      </div>
+    </div>
+  </form>
+
 </body>
 
 </html>
