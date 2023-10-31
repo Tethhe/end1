@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Testing</title>
-    <link rel="stylesheet" href="css/mystyles.css">
-    <link rel="stylesheet" href="/css/nav.css">
-    <link rel="stylesheet" href="/css/slider.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/mystyles.css" />
+    <link rel="stylesheet" href="/css/nav.css" />
+    <link rel="stylesheet" href="/css/slider.css" />
+  </head>
+  <body>
     <nav>
+<<<<<<< Updated upstream
         <div class="top-top-menu">
             <div class="top-top-menu-info1">
                 <p><b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com</p>
@@ -36,57 +36,108 @@
                     <a href="html/pag3.html"><img src="image/meguin-idk.jpg" class="links-externos"></a>
                 </div>
             </div>
+=======
+      <div class="top-top-menu">
+        <div class="top-top-menu-info1">
+          <p>
+            <b>Central: </b> +15 983 436 326 <b>Correo: </b> info@tourenica.com
+          </p>
+>>>>>>> Stashed changes
         </div>
-        <div class="header">
-            <div class="logo">
-                <img src="image/WHYYY.png" alt="Logo-inicio">
-            </div>
-            <div class="top-menu">
-                <ul class="nav">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="">Tours</a>
-                        <ul>
-                            <li><a href="/html/nav/tours/Paracas/Paracas.html">Paracas</a></li>
-                            <li><a href="/html/nav/tours/Ica/ica.html">Ica</a>
-                                <ul>
-                                    <li><a href="">Tour viñedos en Ica</a></li>
-                                    <li><a href="">Tour de Tubulares en Huacachina</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="/html/nav/tours/Palpa/Palpa.html">Palpa</a></li>
-                            <li><a href="/html/nav/tours/Nasca/Nasca.html">Nasca</a></li>
+        <div class="top-top-menu-info2">
+          <p id="fecha-hora"></p>
+          <script>
+            function actualizarFechaHora() {
+              const fechaHoraElement = document.getElementById("fecha-hora");
+              const ahora = new Date();
+              const opciones = {
+                weekday: "long",
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+                hour: "2-digit",
+                minute: "2-digit",
+                second: "2-digit",
+              };
+              const fechaHoraFormateada = ahora.toLocaleDateString(
+                "es-ES",
+                opciones
+              );
+              fechaHoraElement.textContent = fechaHoraFormateada;
+            }
 
-                        </ul>
-                    </li>
-                    <li><a href="">Mas Solicitados</a>
-                        <ul>
-                            <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
-                            <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
-                            <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
-                            <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
-                            <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
-                            <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/html/nav/contactanos.html">Contactenos</a></li>
-                    <li><a href="">Blog</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Libro de Reclamaciones</a></li>
-                </ul>
-            </div>
+            setInterval(actualizarFechaHora, 1000); // Actualizar cada segundo
+            actualizarFechaHora(); // Mostrar la fecha y hora inicial
+          </script>
         </div>
+        <div class="pags">
+          <div>
+            <a href="html/pag1.html"
+              ><img src="image/bochi.jpg" class="links-externos"
+            /></a>
+            <a href="html/pag2.html"
+              ><img src="image/how's-she.jpg" class="links-externos"
+            /></a>
+            <a href="html/pag3.html"
+              ><img src="image/meguin-idk.jpg" class="links-externos"
+            /></a>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="logo">
+          <img src="image/WHYYY.png" alt="Logo-inicio" />
+        </div>
+        <div class="top-menu">
+          <ul class="nav">
+            <li><a href="index.html">Inicio</a></li>
+            <li>
+              <a href="">Tours</a>
+              <ul>
+                <li>
+                  <a href="/html/nav/tours/Paracas/Paracas.html">Paracas</a>
+                </li>
+                <li>
+                  <a href="/html/nav/tours/Ica/ica.html">Ica</a>
+                  <ul>
+                    <li><a href="">Tour viñedos en Ica</a></li>
+                    <li><a href="">Tour de Tubulares en Huacachina</a></li>
+                  </ul>
+                </li>
+                <li><a href="/html/nav/tours/Palpa/Palpa.html">Palpa</a></li>
+                <li><a href="/html/nav/tours/Nasca/Nasca.html">Nasca</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="">Mas Solicitados</a>
+              <ul>
+                <li><a href="">Full Day Paracas Desde Lima By Bus</a></li>
+                <li><a href="">Paquete 02D/01N: Ica de Aventura</a></li>
+                <li><a href="">CITY TOUR ICA CON PASEO EN TUBULARES</a></li>
+                <li><a href="">FULL DAY PARACAS DESDES ICA</a></li>
+                <li><a href="">FULL DAY PARACAS E ICA DESDE LIMA</a></li>
+                <li><a href="">TOUR DE VIÑEDOS EN ICA</a></li>
+              </ul>
+            </li>
+            <li><a href="/html/nav/contactanos.html">Contactenos</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Libro de Reclamaciones</a></li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <div class="slider">
-        <div class="slides">
-            <ul>
-                <li><img src="image/Backgraunds-images/background1.jpg" alt=""></li>
-                <li><img src="image/Backgraunds-images/background2.png" alt=""></li>
-                <li><img src="image/Backgraunds-images/background3.jpeg" alt=""></li>
-                <li><img src="image/Backgraunds-images/background4.jpg" alt=""></li>
-            </ul>
-        </div>
+      <div class="slides">
+        <ul>
+          <li><img src="image/Backgraunds-images/background1.jpg" alt="" /></li>
+          <li><img src="image/Backgraunds-images/background2.png" alt="" /></li>
+          <li>
+            <img src="image/Backgraunds-images/background3.jpeg" alt="" />
+          </li>
+          <li><img src="image/Backgraunds-images/background4.jpg" alt="" /></li>
+        </ul>
+      </div>
     </div>
-    </div>
-</body>
-
+  </body>
 </html>
